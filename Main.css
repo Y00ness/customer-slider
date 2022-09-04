@@ -40,11 +40,55 @@ img {
 /* slider */
 
 .slider {
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
   display: flex;
-  margin-bottom: 3rem;
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  left: 0%;
+  border-radius: 50%;
+  /* transition: all 0.2 linear; */
 }
 
-.customer-box {
-  min-width: 100%;
+.slider .customer {
+  min-width: 20%;
+  padding: 0 2rem;
+  margin-top: 1rem;
+}
+
+.slider-box {
+  position: relative;
+  margin-bottom: 3rem;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.slider-box button {
+  border-radius: 50%;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  outline: none;
+}
+
+.slider-box button:focus {
+  box-shadow: none;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+.slider-button-left {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: calc(50% - 1rem);
+}
+.slider-button-right {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: calc(50% - 1rem);
+  right: 0;
 }
